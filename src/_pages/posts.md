@@ -7,16 +7,16 @@ paginate:
 ---
 
 <ul class="grid blog" role="list" data-layout='50-50'>
-  {% paginator.resources.each do |post| %}
+  <% paginator.resources.each do |post| %>
   <li class="card border-2 flow overflow-hidden">
-    <img class="ar-image" src="{{ post.data.image || 'https://placehold.co/778x438?text=Hello+Ruby'}}">
+    <img class="ar-image" src="<%= post.data.image || 'https://placehold.co/778x438?text=Hello+Ruby' %>">
     <h2>
-      <a href="{{ post.relative_url }}">{{ post.data.title }}</a>
+      <a href="<%= post.relative_url %>"><%= post.data.title %></a>
     </h2>
-    <p class="text-small">{{ post.data.date | date_to_string: "ordinal", "US" }}</p>
-    <p>{{ post.data.description }}</p>
+    <p class="text-small"><%= date_to_string post.data.date, "ordinal" %></p>
+    <p><%= post.data.description %></p>
   </li>
-  {% end %}
+  <% end %>
 </ul>
 
 {% if paginator.total_pages > 1 %}

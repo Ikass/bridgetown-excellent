@@ -7,16 +7,16 @@ paginate:
 ---
 
 <ul class="grid" role="list">
-  {% paginator.resources.each do |product| %}
+  <% paginator.resources.each do |product| %>
   <li class="card border-2 flow overflow-hidden product">
     <img class="ar-image" src="{{ product.data.image || 'https://placehold.co/778x438?text=Hello+Ruby'}}">
     <h2>
-      <a href="{{ product.relative_url }}">{{ product.data.title }}</a>
+      <a href="<%= product.relative_url %>"><%= product.data.title %></a>
     </h2>
     <p class="text-small">{{ product.data.date | date_to_string: "ordinal", "US" }}</p>
     <p>{{ product.data.description }}</p>
   </li>
-  {% end %}
+  <% end %>
 </ul>
 
 {% if paginator.total_pages > 1 %}
