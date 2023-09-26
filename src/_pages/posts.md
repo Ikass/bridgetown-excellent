@@ -19,18 +19,18 @@ paginate:
   <% end %>
 </ul>
 
-{% if paginator.total_pages > 1 %}
+<% if paginator.total_pages > 1 %>
 
   <ul class="pagination">
-    {% if paginator.previous_page %}
+    <% if paginator.previous_page %>
     <li>
-      <a href="{{ paginator.previous_page_path }}">Previous Page</a>
+      <a href="<%= paginator.previous_page_path %>">Previous Page</a>
     </li>
-    {% end %}
-    {% if paginator.next_page %}
+    <% end %>
+    <% if paginator.next_page %>
     <li>
-      <a href="{{ paginator.next_page_path }}">Next Page</a>
+      <a href="<%= paginator.next_page_path %>">Next Page</a>
     </li>
-    {% end %}
+    <% end %>
   </ul>
-{% end %}
+<% end %>
