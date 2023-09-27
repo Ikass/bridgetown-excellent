@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Posts
+page_class: posts
 paginate:
   collection: posts
   per_page: 4
@@ -9,7 +10,7 @@ paginate:
 <ul class="grid blog" role="list" data-layout='50-50'>
   <% paginator.resources.each do |post| %>
   <li class="card border-2 flow overflow-hidden">
-    <img class="ar-image" src="<%= post.data.image || 'https://placehold.co/778x438?text=Hello+Ruby' %>">
+    <img class="" src="<%= post.data.image || 'https://placehold.co/778x438?text=Hello+Ruby' %>">
     <h2>
       <a href="<%= post.relative_url %>"><%= post.data.title %></a>
     </h2>

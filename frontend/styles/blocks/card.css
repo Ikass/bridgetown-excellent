@@ -49,5 +49,5 @@
 
 .card img {
   background-color: var(--color-light);
-  aspect-ratio: 4/4;
+  /* aspect-ratio: 4/4; */
 }

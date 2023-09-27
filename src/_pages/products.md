@@ -9,7 +9,7 @@ paginate:
 <ul class="grid" role="list">
   <% paginator.resources.each do |product| %>
   <li class="card border-2 flow overflow-hidden product">
-    <img class="ar-image" src="<%= product.data.image || 'https://placehold.co/778x438?text=Hello+Ruby' %>">
+    <img class="" src="<%= product.data.image || 'https://placehold.co/778x438?text=Hello+Ruby' %>">
     <h2>
       <a href="<%= product.relative_url %>"><%= product.data.title %></a>
     </h2>

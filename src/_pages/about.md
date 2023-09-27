@@ -42,6 +42,6 @@ It uses progressive enhancement, CSS layout, fluid type & spacing, as well as mo
 - [x] SEO basics.
 - [x] Sitemap.
 - [ ] Activate/load `lite-youtube` only with `youtue: true` in front-matter.
-- [ ] Inline SVG files.
+- [x] Inline SVG files.
 - [x] Open external links in a new tab/window.
 - [ ] Create basic components/layouts.
