@@ -10,7 +10,7 @@ body {
   font-size: var(--size-step-1);
   font-family: var(--font-base);
   line-height: 1.4;
-  letter-spacing: var(--tracking);
+  /* letter-spacing: var(--tracking); */
   display: flex;
   flex-direction: column;
 }
@@ -26,7 +26,7 @@ h2,
 h3 {
   line-height: 1;
   letter-spacing: var(--tracking-s);
-  /* font-family: var(--font-display); */
+  font-family: var(--font-display);
 }
 
 h1 {

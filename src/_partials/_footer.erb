@@ -30,9 +30,7 @@
         <% site.data.social_svg.each do |item| %>
           <a href="<%= item.url %>" class="flex">
             <span class="sr-only"><%= item.title %></span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="<%= item.svg %>"></path>
-            </svg>
+            <sl-icon-button name="<%= item.icon %>" label="<%= item.title %>"></sl-icon-button>
           </a>
         <% end %>
 

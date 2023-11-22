@@ -1,0 +1,67 @@
+/* Shoelace component custom styling */
+
+sl-card {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch !important;
+}
+
+sl-card::part(body) {
+  flex-grow: 1;
+}
+
+sl-card > * {
+  flex-grow: 1;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+.card .card__body {
+  flex-grow: 1;
+}
+
+.card-overview {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  align-self: stretch;
+}
+
+.card-overview [slot='base'] {
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.card-overview [slot='body'] {
+  flex-grow: 1 !important;
+}
+
+.card-overview small {
+  color: var(--sl-color-neutral-500);
+}
+
+.card__body {
+  flex-grow: 1;
+}
+
+.card-overview [slot='footer'] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styling for Shoelace icons and icon-buttons */
+
+sl-icon-button::part(base):hover,
+sl-icon-button::part(base):focus {
+  color: var(--color-primary);
+}
+
+sl-icon-button::part(base):active {
+  color: var(--color-primary);
+}

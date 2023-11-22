@@ -48,10 +48,13 @@
   /* Typography */
   /* **************** */
 
-  --font-sans: "Atkinson Hyperlegible", -apple-system, BlinkMacSystemFont,
+  --font-sans: "RedHatText", -apple-system, BlinkMacSystemFont,
     "Avenir Next", Avenir, "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI",
     Arial, Helvetica, "Helvetica Neue", sans-serif;
   --font-serif: Georgia, "Times New Roman", Times, serif;
+  --font-display:  RedHatDisplay, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
   --font-mono: "RobotoMono", Consolas, Menlo, Monaco, "Andale Mono",
     "Ubuntu Mono", monospace;
   /* --font-display: ui-serif, serif; */
