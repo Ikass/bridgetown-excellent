@@ -1,3 +1,6 @@
+/* Import the base Shoelace stylesheet: */
+@import "@shoelace-style/shoelace/dist/themes/light.css";
+
 /* Define CSS Layers */
 @layer global, composition, blocks, utilities;
 

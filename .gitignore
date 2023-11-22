@@ -37,3 +37,5 @@ yarn-debug.log*
 
 # Ignore VSCode workspace
 *.code-workspace
+
+src/shoelace-assets
