@@ -17,17 +17,12 @@ It uses progressive enhancement, CSS layout, fluid type & spacing, as well as mo
 
 - [Features](#features)
 - [TODO](#todo)
-- [Install](#install)
-- [Development](#development)
-- [Commands](#commands)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
+
 
 ## Features
 
 - Built with [Bridgetown](https://www.bridgetownrb.com).
-- [Remix](https://remixicon.com/) icons.
-- [Atkinson Hyperlegible](https://brailleinstitute.org/freefont) typeface for greater legibility and readability for low vision readers, locally served.
+- [RedHat](https://github.com/RedHatOfficial/RedHatFont) variable typeface, locally served.
 - Justin Ribeiro's [`lite-youtube`](https://github.com/justinribeiro/lite-youtube) plugin.
 - [Bridgetown SEO Tag](https://github.com/bridgetownrb/bridgetown-seo-tag) plugin for better SEO.
 - Opens external links and PDFs in a new window. Thanks to Joost van der Schee from [JekyllCodex](http://jekyllcodex.org/).

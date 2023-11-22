@@ -6,18 +6,24 @@ paginate:
   collection: products
 ---
 
-<ul class="grid" role="list">
+<div class="grid" role="list">
   <% paginator.resources.each do |product| %>
-  <li class="card border-2 flow overflow-hidden product">
-    <img class="" src="<%= product.data.image || 'https://placehold.co/778x438?text=Hello+Ruby' %>">
-    <h2>
-      <a href="<%= product.relative_url %>"><%= product.data.title %></a>
-    </h2>
-    <p class="text-small"><%= date_to_string product.data.date, "ordinal" %></p>
-    <p><%= product.data.description %></p>
-  </li>
+    <sl-card class="card-overview">
+      <img
+        slot="image"
+        src="<%= product.data.product_image || 'https://placehold.co/778x438?text=Hello+Ruby' %>"
+        alt="A kitten sits patiently between a terracotta pot and decorative grasses."
+      />
+      <strong><%= product.data.title %></strong><br />
+      <%= product.data.product_description %><br />
+      <small><%= product.data.category.titleize %></small>
+      <div slot="footer">
+        <sl-button href="<%= product.relative_url %>" variant="warning">More Info</sl-button>
+        <sl-rating></sl-rating>
+      </div>
+    </sl-card>
   <% end %>
-</ul>
+</div>
 
 <% if paginator.total_pages > 1 %>
 

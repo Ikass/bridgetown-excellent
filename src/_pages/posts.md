@@ -7,18 +7,24 @@ paginate:
   per_page: 4
 ---
 
-<ul class="grid blog" role="list" data-layout='50-50'>
+<div class="grid blog" role="list" data-layout='50-50'>
   <% paginator.resources.each do |post| %>
-  <li class="card border-2 flow overflow-hidden">
-    <img class="" src="<%= post.data.image || 'https://placehold.co/778x438?text=Hello+Ruby' %>">
-    <h2>
-      <a href="<%= post.relative_url %>"><%= post.data.title %></a>
-    </h2>
-    <p class="text-small"><%= date_to_string post.data.date, "ordinal" %></p>
-    <p><%= post.data.description %></p>
-  </li>
+    <sl-card class="card-overview">
+      <img
+        slot="image"
+        src="<%= post.data.image || 'https://placehold.co/778x438?text=Hello+Ruby' %>"
+        alt="A kitten sits patiently between a terracotta pot and decorative grasses."
+      />
+      <h2><%= post.data.title %></h2><br />
+      <%= post.data.description %><br />
+      <small><%= date_to_string post.data.date, "ordinal" %></small>
+      <div slot="footer">
+        <sl-button href="<%= post.relative_url %>" variant="warning">Read More</sl-button>
+        <sl-rating></sl-rating>
+      </div>
+    </sl-card>
   <% end %>
-</ul>
+</div>
 
 <% if paginator.total_pages > 1 %>
 

@@ -19,8 +19,7 @@ Welcome to your new Bridgetown website! You can update this README file to provi
 ## Features
 
 - Built with [Bridgetown](https://www.bridgetownrb.com).
-- [Remix](https://remixicon.com/) icons.
-- [Atkinson Hyperlegible](https://brailleinstitute.org/freefont) typeface for greater legibility and readability for low vision readers, locally served.
+- [RedHat](https://github.com/RedHatOfficial/RedHatFont) variable typeface, locally served.
 - Justin Ribeiro's [`lite-youtube`](https://github.com/justinribeiro/lite-youtube) plugin.
 - [Bridgetown SEO Tag](https://github.com/bridgetownrb/bridgetown-seo-tag) plugin for better SEO.
 - Opens external links and PDFs in a new window. Thanks to Joost van der Schee from [JekyllCodex](http://jekyllcodex.org/).

@@ -1,6 +1,7 @@
 ---
 title: Alpha frame
-image: /images/products/classic-21x29-7-frosted-black-frame.jpg
+product_image: /images/products/classic-21x29-7-frosted-black-frame.jpg
+product_description: Ready made aluminium picture frame.
 ---
 
 Introducing the Alpha 7.8 mm Narrow Picture Frame, a perfect blend of design and quality that will exceed your highest expectations. This ready-made picture frame is crafted with precision in Germany, using only the best components and innovative features. With attractive, high-quality anodized or veneered surfaces, two glass variants, and 28 available formats, the Alpha frame offers a versatile and stylish solution for displaying your cherished memories.

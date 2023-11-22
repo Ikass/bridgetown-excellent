@@ -1,6 +1,6 @@
 ---
 title: Product FIVE
-image: https://prd.place/600?id=02?p=16
+product_image: https://prd.place/600?id=02?p=16
 ---
 
 This is a test product and it's description.
