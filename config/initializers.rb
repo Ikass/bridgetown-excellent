@@ -37,7 +37,7 @@ Bridgetown.configure do |config|
   #   init :parse_routes
   # end
   #
-  config.url = "https://bridgetown-excellent.netlify.app" # the base hostname & protocol for your site
+  config.url = "https://bridgetown-excellent.onrender.com/" # the base hostname & protocol for your site
 
   init :"bridgetown-sitemap"
   init :"bridgetown-seo-tag"

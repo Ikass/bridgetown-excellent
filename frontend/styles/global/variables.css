@@ -1,7 +1,7 @@
 /* Global variables */
 
 :root {
-  --gutter: var(--space-s-m);
+  --gutter: var(--size-fluid-2);
   --border-radius: 0.5rem;
   --transition-base: 250ms ease;
   --transition-movement: 200ms linear;
@@ -48,17 +48,10 @@
   /* Typography */
   /* **************** */
 
-  --font-sans: "RedHatText", -apple-system, BlinkMacSystemFont,
-    "Avenir Next", Avenir, "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI",
-    Arial, Helvetica, "Helvetica Neue", sans-serif;
+  --font-sans: "RedHatText", -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif;
   --font-serif: Georgia, "Times New Roman", Times, serif;
-  --font-display:  RedHatDisplay, -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol";
-  --font-mono: "RobotoMono", Consolas, Menlo, Monaco, "Andale Mono",
-    "Ubuntu Mono", monospace;
-  /* --font-display: ui-serif, serif; */
-
+  --font-display:  RedHatDisplay, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-mono: "RobotoMono", Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   --font-base: var(--font-sans);
 
 }

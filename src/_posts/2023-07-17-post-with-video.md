@@ -1,6 +1,6 @@
 ---
 title: "Post with Video"
-image: https://source.unsplash.com/vj_9l20fzj0
+image: 
 date: 2023-07-17 15:35:48 +0300
 categories: updates
 ---

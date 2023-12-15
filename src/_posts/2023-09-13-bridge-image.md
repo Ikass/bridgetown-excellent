@@ -1,6 +1,6 @@
 ---
 title: "Post with Image of a Bridge"
-image: https://source.unsplash.com/LQSqt43npsk
+image: 
 date: 2023-09-13 16:35:48 +0300
 categories: bridges
 ---

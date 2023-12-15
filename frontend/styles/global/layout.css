@@ -1,0 +1,19 @@
+
+
+/* *********************** */
+/* wrapper for site footer */
+/* *********************** */
+site-foot {
+    padding: var(--space-s-m);
+    background: var(--color-dark);
+    color: var(--color-light);
+    font-size: var(--font-size-fluid-1);
+}
+
+/* *********************** */
+/* full bleed wrapper      */
+/* *********************** */
+full-bleed {
+    grid-column: 1 / -1;
+    inline-size: 100%;
+}

@@ -1,6 +1,6 @@
 ---
 title: "Your First Post on Bridgetown"
-image: https://source.unsplash.com/2GW4S08kd-8
+image: 
 date: 2023-05-30 15:31:48 +0300
 categories: updates
 ---
