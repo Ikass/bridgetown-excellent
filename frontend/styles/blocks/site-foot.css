@@ -6,12 +6,13 @@ footer {
   padding: var(--space-s-m);
   background: var(--color-dark);
   color: var(--color-light);
-  font-size: var(--font-size-fluid-1);
+  font-size: var(--font-size-fluid-0);
 }
 
 .site-foot__inner {
   display: flex;
-  gap: var(--space-s);
+  gap: var(--size-fluid-1);
+  justify-content: flex-start;
 }
 
 :not(nav#social).site-foot__inner {
@@ -29,6 +30,7 @@ footer {
 .site-foot a:hover {
   text-decoration: underline solid var(--color-primary) 2px;
   text-underline-offset: 0.25em;
+  /* transition: text-decoration 0.3s ease-in-out; */
 }
 
 #social a {

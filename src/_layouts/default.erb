@@ -11,6 +11,7 @@
       <%= yield %>
     </main>
 
-    <%= render "footer", metadata: site.metadata %>
+    <%# render "footer", metadata: site.metadata %>
+    <%= render Shared::SiteFooter.new(metadata: site.metadata, resource: resource) %>
   </body>
 </html>

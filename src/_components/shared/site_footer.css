@@ -1,0 +1,30 @@
+site-footer {
+    --external-link: url("/images/svg/external-link-light.svg");
+    padding: var(--gutter);
+    background: var(--color-dark);
+    color: var(--color-light);
+    font-size: var(--font-size-fluid-0);
+    /* margin-inline: auto; */
+}
+
+.site-foot__inner {
+    display: flex;
+    gap: var(--size-fluid-1);
+}
+
+:not(nav#social).site-foot__inner {
+    /* flex-wrap: wrap; */
+}
+
+site-footer * {
+    color: var(--color-light);
+}
+
+site-footer a {
+    text-decoration: none;
+}
+
+site-footer a:hover {
+    text-decoration: underline solid var(--color-primary) 2px;
+    text-underline-offset: 0.25em;
+}

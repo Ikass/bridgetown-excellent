@@ -88,8 +88,6 @@ a {
 }
 
 a:hover {
-  /* text-decoration: none; */
-  /* text-decoration-color: var(--color-primary); */
   text-decoration: underline solid var(--color-primary) 2px;
   text-underline-offset: 0.25em;
   transition: var(--transition-fade);

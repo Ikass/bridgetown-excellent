@@ -1,4 +1,12 @@
 :root {
+
+    --font-sans: "RedHatText", -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif;
+    --font-serif: Georgia, "Times New Roman", Times, serif;
+    --font-display: RedHatDisplay, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-mono: "RobotoMono", Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    --font-base: var(--font-sans);
+
+    /* Fluid typography sizes */
     --font-size-fluid-0: clamp(.75rem, 1.5vw, 1rem);
     --font-size-fluid-1: clamp(1rem, 2vw, 1.5rem);
     --font-size-fluid-2: clamp(1.5rem, 3vw, 2.5rem);

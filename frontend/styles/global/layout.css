@@ -1,8 +1,7 @@
-
-
 /* *********************** */
 /* wrapper for site footer */
 /* *********************** */
+/* TODO: refactor to web component */
 site-foot {
     padding: var(--space-s-m);
     background: var(--color-dark);
@@ -13,7 +12,56 @@ site-foot {
 /* *********************** */
 /* full bleed wrapper      */
 /* *********************** */
+/* TODO: refactor to web component */
 full-bleed {
     grid-column: 1 / -1;
     inline-size: 100%;
+}
+
+
+/**
+ * WRAPPER
+ * Sets a max width, adds a consistent gutter and horizontally
+ * centers the contents
+ * Info: https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/
+ */
+.wrapper {
+    max-inline-size: var(--wrapper-max-width, 85rem);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+}
+
+
+/* AUTO GRID
+Related Every Layout: https://every-layout.dev/layouts/grid/
+More info on the flexible nature: https://piccalil.li/tutorial/create-a-responsive-grid-layout-with-no-media-queries-using-css-grid/
+A flexible layout that will create an auto-fill grid with
+configurable grid item sizes
+
+CUSTOM PROPERTIES AND CONFIGURATION
+--gutter (var(--space-s-m)): This defines the space
+between each item.
+
+--grid-min-item-size (14rem): How large each item should be
+ideally, as a minimum.
+
+--grid-placement (auto-fill): Set either auto-fit or auto-fill
+to change how empty grid tracks are handled */
+
+grid-container {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-placement, auto-fill),
+                minmax(var(--grid-min-item-size, 16rem), 1fr));
+    gap: var(--gutter, var(--space-s-l));
+}
+
+
+grid-container[data-rows='masonry'] {
+    grid-template-rows: masonry;
+    align-items: start;
+}
+
+grid-container[data-layout='50-50'] {
+    /* --grid-placement: auto-fit; */
+    --grid-min-item-size: clamp(16rem, 50vw, 26rem);
 }

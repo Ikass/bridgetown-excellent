@@ -40,18 +40,4 @@
   --size-step-4: clamp(2.0625rem, 1.15rem + 4.56vw, 5rem);
   --size-step-5: clamp(2.5rem, 1.08rem + 7.09vw, 7.0625rem);
   --size-step-6: clamp(3rem, 0.84rem + 10.78vw, 9.9375rem);
-
-  --size-fluid-1: clamp(0.5rem, 1vw, 1rem);
-
-
-  /* **************** */
-  /* Typography */
-  /* **************** */
-
-  --font-sans: "RedHatText", -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif;
-  --font-serif: Georgia, "Times New Roman", Times, serif;
-  --font-display:  RedHatDisplay, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-mono: "RobotoMono", Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-  --font-base: var(--font-sans);
-
 }
