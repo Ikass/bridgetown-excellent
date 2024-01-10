@@ -49,19 +49,68 @@ ideally, as a minimum.
 to change how empty grid tracks are handled */
 
 grid-container {
+    --grid-alignment: center;
+    --grid-min-item-size: var(--size-fluid-8);
+    --padding-inline: ;
     display: grid;
-    grid-template-columns: repeat(var(--grid-placement, auto-fill),
-                minmax(var(--grid-min-item-size, 16rem), 1fr));
-    gap: var(--gutter, var(--space-s-l));
+    grid-template-columns: var(--grid-layout-columns, repeat(var(--grid-placement, auto-fill), minmax(var(--grid-min-item-size, 16rem), 1fr)));
+    gap: var(--gutter);
+    max-width: var(--wrapper-width, 85rem);
+    align-items: var(--grid-alignment);
+    margin-inline: auto;
+    padding-block: var(--padding-block, 1rem);
 }
 
+
+grid-container :is(h1, h2, h3, hgroup) {
+    text-align: center;
+}
+
+grid-container[data-layout='content'] {
+    --content-width: var(--wrapper-md);
+    --grid-layout-columns: 1fr minmax(auto, var(--content-width)) 1fr;
+    --grid-min-item-size: ;
+    --wrapper-width: var(--wrapper-xl);
+    --padding-block: var(--size-fluid-5);
+}
+
+grid-container[data-layout='content'] > * {
+    grid-column: 2;
+}
 
 grid-container[data-rows='masonry'] {
     grid-template-rows: masonry;
     align-items: start;
 }
 
+grid-container[data-rows='3-2'] {
+    --grid-layout-columns: 3fr 2fr; /* 3/5 and 2/5 layout */
+}
+
+grid-container[data-layout='full-bleed'] {
+    --background-color: var(--stone-3);
+    --content-width: var(--wrapper-lg);
+    --grid-layout-columns: 1fr minmax(auto, var(--content-width)) 1fr;
+    --padding-block: var(--size-fluid-4);
+    --wrapper-width: 100%;
+    background-color: var(--background-color);
+}
+
+grid-container[data-layout='full-bleed'] > * {
+    /* grid-column: 1 / -1; */
+    grid-column: 2;
+    margin-inline: auto;
+}
+
 grid-container[data-layout='50-50'] {
     /* --grid-placement: auto-fit; */
     --grid-min-item-size: clamp(16rem, 50vw, 26rem);
+}
+
+full-bleed {
+    grid-column: 1 / -1;
+    inline-size: 100%;
+    background-color: var(--stone-2);
+    padding-block-start: var(--region-space-top, var(--space-l-2xl));
+    padding-block-end: var(--region-space-bottom, var(--space-l-2xl));
 }

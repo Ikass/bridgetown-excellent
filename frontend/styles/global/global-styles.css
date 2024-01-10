@@ -13,7 +13,7 @@ body {
   /* letter-spacing: var(--tracking); */
   display: flex;
   flex-direction: column;
-  /* min-height: 100vh; */
+  min-height: 100vh;
 }
 
 /* make the footer 'sticky' */
@@ -46,13 +46,13 @@ h3 {
 p,
 li,
 blockquote:not([class]) {
-  max-inline-size: 50ch;
+  /* max-inline-size: 50ch; */
 }
 
 h1,
 h2,
 h3 {
-  max-inline-size: 20ch;
+  /* max-inline-size: 20ch; */
 }
 
 blockquote {
