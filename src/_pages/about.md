@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: markdown
 title: About
 ---
 
@@ -17,7 +17,6 @@ It uses progressive enhancement, CSS layout, fluid type & spacing, as well as mo
 
 - [Features](#features)
 - [TODO](#todo)
-
 
 ## Features
 

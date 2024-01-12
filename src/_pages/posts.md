@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Posts
+title: Blog Posts
 page_class: posts
 paginate:
   collection: posts
   per_page: 4
 ---
 
-<div class="grid blog" role="list" data-layout='50-50'>
+<grid-container role="list" data-layout='50-50'>
   <% paginator.resources.each do |post| %>
     <sl-card class="card-overview">
       <img
@@ -24,7 +24,7 @@ paginate:
       </div>
     </sl-card>
   <% end %>
-</div>
+</grid-container>
 
 <% if paginator.total_pages > 1 %>
 

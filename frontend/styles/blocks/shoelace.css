@@ -23,15 +23,16 @@
   align-items: center;
 }
   
-.grid sl-card {
+grid-container sl-card {
   position: relative;
+  height: 100%;
 }
 
-.grid sl-card::part(base) {
+grid-container sl-card::part(base) {
   height: 100%; 
 }
 
-.grid sl-card::part(body) {
+grid-container sl-card::part(body) {
   flex: 1 1 auto;
 }
 

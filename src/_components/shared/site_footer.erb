@@ -1,7 +1,6 @@
-<site-footer class="flow">
+<footer>
 
-  <%# <article class="wrapper grid"> %>
-  <grid-container class="wrapper">
+  <grid-container data-layout="footer">
     <div class="flow">
       <p class="text-bold">
         Bridgetown Excellent
@@ -10,7 +9,6 @@
         An (opiniated) Bridgetown starter, based on Andy Bell’s talk “Be the browser’s mentor, not its micromanager”.
       </p>
     </div>
-
 
     <div class="flow">
       <p class="text-bold">Quick Links</p>
@@ -36,14 +34,13 @@
 
       </nav>
     </div>
-
-  <%# </article> %>
   </grid-container>
 
-  <div class="site-foot__inner centered text-step-0">
-    <p>&copy; 2023</p>
-    <p>Developed by 
+<%# TODO: fix date layout %>
+  <grid-container data-layout="full-bleed">
+      <p>&copy; 2024 <%= date_to_string site.time, "y" %> Developed by 
       <a href="https://grittypublishing.com">Gritty Publishing</a>
     </p>
-  </div>
-</site-footer>
+  </grid-container>
+
+</footer>
