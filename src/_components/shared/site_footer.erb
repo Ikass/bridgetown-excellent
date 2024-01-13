@@ -38,7 +38,7 @@
 
 <%# TODO: fix date layout %>
   <grid-container data-layout="full-bleed">
-      <p>&copy; 2024 <%= date_to_string site.time, "y" %> Developed by 
+      <p>&copy; <%= site.time.strftime("%Y") %> Developed by 
       <a href="https://grittypublishing.com">Gritty Publishing</a>
     </p>
   </grid-container>
