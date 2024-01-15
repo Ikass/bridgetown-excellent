@@ -2,12 +2,10 @@
 layout: default
 ---
 
-<article class="region blog">
-  <div class="wrapper flow prose">
 
-    <h1><%= data.title %></h1>
 
-    <%= yield %>
 
-  </div>
-</article>
+<grid-container data-layout="content">
+  <h1><%= data.title %></h1>
+  <%= yield %>
+</grid-container>
