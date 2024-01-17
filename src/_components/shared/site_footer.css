@@ -25,6 +25,7 @@ site-footer {
 
 .site-foot__inner {
     display: flex;
+    flex-wrap: wrap;
     gap: var(--size-fluid-1);
 }
 

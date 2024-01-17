@@ -25,6 +25,7 @@
       <p class="text-bold">Social Links</p>
       <nav id="social" class="site-foot__inner" aria-label="Social links">
         
+        <%# TODO: refactor into a flex container %>
         <% site.data.social_svg.each do |item| %>
           <a href="<%= item.url %>" class="flex">
             <span class="sr-only"><%= item.title %></span>

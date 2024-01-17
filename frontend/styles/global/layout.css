@@ -45,10 +45,12 @@ grid-container {
     align-items: var(--grid-alignment, start);
     margin-inline: auto;
     padding-block: var(--padding-block, 1rem);
+    background-color: var(--background-color);
 }
 
-grid-container :is(h1, hgroup) {
+grid-container :is(h1, header, hgroup) {
     text-align: center;
+    grid-column: 1 / -1;
 }
 
 grid-container :is(h1, h2, h3, hgroup) {
@@ -70,6 +72,24 @@ grid-container[data-layout='content'] > * {
 grid-container[data-layout='50-50'] {
     --grid-min-item-size: clamp(16rem, 50vw, 26rem);
     /* --grid-placement: auto-fit; */
+}
+
+grid-container[data-layout='features'] {
+    --grid-min-item-size: clamp(16rem, 50vw, 30rem);
+    /* --background-color: var(--orange-3); */
+}
+
+grid-container[data-layout='features'] > be-grid-item {
+    display: flex;
+    background-color: var(--orange-3);
+    padding: var(--gutter);
+    align-self: stretch;
+    border-radius: var(--radius-3);
+}
+
+grid-container[data-layout='features'] > be-grid-item:has(img) {
+    /* padding: 0; */
+    justify-content: center; /* center img */
 }
 
 grid-container[data-rows='3-2'] {
