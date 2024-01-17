@@ -243,6 +243,11 @@
   resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.1.6.tgz#22958c042e10b67463997bd6ea7115fe28cbcaf9"
   integrity sha512-OfX7E2oUDYxtBvsuS4e/jSn4Q9Qb6DzgeYtsAdkPZ47znpoNsMgZw0+tVijiv3uGNR6dgNlty6r9rzIzHjtd/A==
 
+"@hotwired/turbo@^7.3.0":
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/@hotwired/turbo/-/turbo-7.3.0.tgz#2226000fff1aabda9fd9587474565c9929dbf15d"
+  integrity sha512-Dcu+NaSvHLT7EjrDrkEmH4qET2ZJZ5IcCWmNXxNQTBwlnE5tBZfN6WxZ842n5cHV52DH/AKNirbPBtcEXDLW4g==
+
 "@justinribeiro/lite-youtube@^1.5.0":
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/@justinribeiro/lite-youtube/-/lite-youtube-1.5.0.tgz#c8f5b1e9bc6980defb725bf84d84a957deea1b92"
@@ -844,6 +849,11 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
+
+turbo-shadow@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/turbo-shadow/-/turbo-shadow-1.2.0.tgz#0b1534ec073a39b96e6d5a39738d196f5a82760a"
+  integrity sha512-E62rmb07CG9mA71asc3JRhKgzyfmW1OSl/m5qF1l4zT81xAYQaMIIhO/EfKdhVHeomxJNH3cOZ761tN2gA/leQ==
 
 update-browserslist-db@^1.0.13:
   version "1.0.13"
