@@ -5,26 +5,26 @@
  */
 
 .wrapper {
-    max-inline-size: var(--wrapper-max-width, 85rem);
-    margin-inline: auto;
-    padding-inline: var(--gutter);
+  max-inline-size: var(--wrapper-max-width, 85rem);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
 }
 
 be-wrapper {
-    --wrapper-max-width: 85rem; /* Default max-width, can be overridden */
-    display: block;
-    max-width: var(--wrapper-max-width);
-    margin: 0 auto; /* Center the container horizontally */
-    padding-inline: var(--gutter);
+  --wrapper-max-width: 85rem; /* Default max-width, can be overridden */
+  display: block;
+  max-width: var(--wrapper-max-width);
+  margin: 0 auto; /* Center the container horizontally */
+  padding-inline: var(--gutter);
 }
 
 be-wrapper :is(h1, hgroup) {
-    text-align: center;
-    margin-block: var(--size-fluid-2);
+  text-align: center;
+  margin-block: var(--size-fluid-2);
 }
 
 be-wrapper[data-size="xl"] {
-    --wrapper-max-width: var(--wrapper-xl);
+  --wrapper-max-width: var(--wrapper-xl);
 }
 
 /* AUTO GRID
@@ -36,81 +36,87 @@ A flexible layout that will create an auto-fill grid with configurable grid item
 /* TODO: refactor to web components with Declarative Shadow DOM */
 
 grid-container {
-    /* --grid-alignment: center; */
-    --grid-min-item-size: var(--size-fluid-8);
-    display: grid;
-    grid-template-columns: var(--grid-layout-columns, repeat(var(--grid-placement, auto-fill), minmax(var(--grid-min-item-size, 16rem), 1fr)));
-    gap: var(--gutter);
-    max-width: var(--wrapper-width, 85rem);
-    align-items: var(--grid-alignment, start);
-    margin-inline: auto;
-    padding-block: var(--padding-block, 1rem);
-    background-color: var(--background-color);
+  /* --grid-alignment: center; */
+  --grid-min-item-size: var(--size-fluid-8);
+  display: grid;
+  grid-template-columns: var(
+    --grid-layout-columns,
+    repeat(
+      var(--grid-placement, auto-fill),
+      minmax(var(--grid-min-item-size, 16rem), 1fr)
+    )
+  );
+  gap: var(--gutter);
+  max-width: var(--wrapper-width, 85rem);
+  align-items: var(--grid-alignment, start);
+  margin-inline: auto;
+  padding-block: var(--padding-block, 1rem);
+  background-color: var(--background-color);
 }
 
 grid-container :is(h1, header, hgroup) {
-    text-align: center;
-    grid-column: 1 / -1;
+  text-align: center;
+  grid-column: 1 / -1;
 }
 
 grid-container :is(h1, h2, h3, hgroup) {
-    margin-block-start: var(--gutter);
+  margin-block-start: var(--gutter);
 }
 
-grid-container[data-layout='content'] {
-    --content-width: var(--wrapper-md);
-    --grid-layout-columns: 1fr minmax(auto, var(--content-width)) 1fr;
-    --grid-min-item-size: ;
-    --wrapper-width: var(--wrapper-xl);
-    --padding-block: var(--size-fluid-5);
+grid-container[data-layout="content"] {
+  --content-width: var(--wrapper-md);
+  --grid-layout-columns: 1fr minmax(auto, var(--content-width)) 1fr;
+  --grid-min-item-size: ;
+  --wrapper-width: var(--wrapper-xl);
+  --padding-block: var(--size-fluid-5);
 }
 
-grid-container[data-layout='content'] > * {
-    grid-column: 2;
+grid-container[data-layout="content"] > * {
+  grid-column: 2;
 }
 
-grid-container[data-layout='50-50'] {
-    --grid-min-item-size: clamp(16rem, 50vw, 26rem);
-    /* --grid-placement: auto-fit; */
+grid-container[data-layout="50-50"] {
+  --grid-min-item-size: clamp(16rem, 50vw, 26rem);
+  /* --grid-placement: auto-fit; */
 }
 
-grid-container[data-layout='features'] {
-    --grid-min-item-size: clamp(16rem, 50vw, 30rem);
-    /* --background-color: var(--orange-3); */
+grid-container[data-layout="features"] {
+  --grid-min-item-size: clamp(16rem, 50vw, 30rem);
+  /* --background-color: var(--orange-3); */
 }
 
-grid-container[data-layout='features'] > be-grid-item {
-    display: flex;
-    background-color: var(--orange-3);
-    padding: var(--gutter);
-    align-self: stretch;
-    border-radius: var(--radius-3);
+grid-container[data-layout="features"] > be-grid-item {
+  display: flex;
+  background-color: var(--orange-3);
+  padding: var(--gutter);
+  align-self: stretch;
+  border-radius: var(--radius-3);
 }
 
-grid-container[data-layout='features'] > be-grid-item:has(img) {
-    /* padding: 0; */
-    justify-content: center; /* center img */
+grid-container[data-layout="features"] > be-grid-item:has(img) {
+  /* padding: 0; */
+  justify-content: center; /* center img */
 }
 
-grid-container[data-rows='3-2'] {
-    --grid-layout-columns: 3fr 2fr; /* 3/5 and 2/5 layout */
+grid-container[data-rows="3-2"] {
+  --grid-layout-columns: 3fr 2fr; /* 3/5 and 2/5 layout */
 }
 
-grid-container[data-layout='full-bleed'] {
-    --background-color: var(--stone-3);
-    --content-width: var(--wrapper-lg);
-    --grid-layout-columns: 1fr minmax(auto, var(--content-width)) 1fr;
-    --padding-block: var(--size-fluid-4);
-    --wrapper-width: 100%;
-    background-color: var(--background-color);
+grid-container[data-layout="full-bleed"] {
+  --background-color: var(--stone-3);
+  --content-width: var(--wrapper-lg);
+  --grid-layout-columns: 1fr minmax(auto, var(--content-width)) 1fr;
+  --padding-block: var(--size-fluid-4);
+  --wrapper-width: 100%;
+  background-color: var(--background-color);
 }
 
-grid-container[data-layout='full-bleed'] > * {
-    /* grid-column: 1 / -1; */
-    grid-column: 2;
-    margin-inline: auto;
+grid-container[data-layout="full-bleed"] > * {
+  /* grid-column: 1 / -1; */
+  grid-column: 2;
+  margin-inline: auto;
 }
 
-body > footer > grid-container[data-layout='full-bleed'] {
-    --padding-block: var(--size-fluid-2);
+body > footer > grid-container[data-layout="full-bleed"] {
+  --padding-block: var(--size-fluid-2);
 }
