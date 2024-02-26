@@ -7,9 +7,9 @@ paginate:
   per_page: 4
 ---
 
-<grid-container role="list" data-layout='50-50'>
+<section role="list" class="grid">
   <% paginator.resources.each do |post| %>
-    <sl-card class="card-overview">
+    <article>
       <img
         slot="image"
         src="<%= post.data.image || 'https://placehold.co/778x438?text=Hello+Ruby' %>"
@@ -18,13 +18,15 @@ paginate:
       <h2><%= post.data.title %></h2><br />
       <%= post.data.description %><br />
       <small><%= date_to_string post.data.date, "ordinal" %></small>
-      <div slot="footer">
-        <sl-button href="<%= post.relative_url %>" variant="warning">Read More</sl-button>
-        <sl-rating></sl-rating>
-      </div>
-    </sl-card>
+      <footer>
+        <a href="<%= post.relative_url %>" >
+          <button>Read More</button>
+        </a>
+      </footer>
+    </article>
   <% end %>
-</grid-container>
+</section>
+
 
 <% if paginator.total_pages > 1 %>
 

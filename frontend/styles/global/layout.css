@@ -34,6 +34,7 @@ A flexible layout that will create an auto-fill grid with configurable grid item
 */
 
 /* TODO: refactor to web components with Declarative Shadow DOM */
+/* TODO: rename to `br-grid` */
 
 grid-container {
   /* --grid-alignment: center; */
