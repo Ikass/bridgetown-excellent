@@ -3,7 +3,7 @@ layout: markdown
 title: About
 ---
 
-## Bridgetown Excellent
+## Bridgetown Rise
 
 This (opiniated) [Bridgetown](https://www.bridgetownrb.com) starter template is based on [Andy Bell’s](https://bell.bz/@andy) talk ‘Be the browser’s mentor, not its micromanager’ and it’s companion website [buildexcellentwebsit.es](https://buildexcellentwebsit.es/), as well as [Lene Saile's](https://www.lenesaile.com/en/) [Eleventy Excellent](https://github.com/madrilene/eleventy-excellent) starter template.
 
@@ -15,6 +15,9 @@ It uses progressive enhancement, CSS layout, fluid type & spacing, as well as mo
 
 ## Table of Contents
 
+- [Bridgetown Rise](#bridgetown-rise)
+- [Preview](#preview)
+- [Table of Contents](#table-of-contents)
 - [Features](#features)
 - [TODO](#todo)
 
@@ -35,6 +38,7 @@ It uses progressive enhancement, CSS layout, fluid type & spacing, as well as mo
 - [x] Accessible, responsive and robust main navigation.
 - [x] SEO basics.
 - [x] Sitemap.
+- [ ] Add `lite-vimeo` plugin as well.
 - [ ] Activate/load `lite-youtube` only with `youtue: true` in front-matter.
 - [x] Inline SVG files.
 - [x] Open external links in a new tab/window.

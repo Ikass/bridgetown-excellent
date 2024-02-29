@@ -1,3 +1,16 @@
+/* Set line lengths */
+p,
+li,
+blockquote:not([class]) {
+  max-inline-size: 65ch;
+}
+
+h1,
+h2,
+h3 {
+  max-inline-size: 25ch;
+}
+
 /*** WRAPPER
  * Sets a max width, adds a consistent gutter and horizontally
  * centers the contents
@@ -35,6 +48,20 @@ A flexible layout that will create an auto-fill grid with configurable grid item
 
 /* TODO: refactor to web components with Declarative Shadow DOM */
 /* TODO: rename to `br-grid` */
+
+br-grid {
+  --grid-min-item-size: var(--size-fluid-9);
+  display: grid;
+  grid-template-columns: var(--grid-layout-columns,
+  repeat(var(--grid-placement, auto-fill),
+  minmax(var(--grid-min-item-size, 16rem), 1fr)));
+  gap: var(--gutter);
+  max-width: var(--wrapper-width, 85rem);
+  align-items: var(--grid-alignment, start);
+  margin-inline: auto;
+  padding-block: var(--padding-block, 1rem);
+  background-color: var(--background-color);
+}
 
 grid-container {
   /* --grid-alignment: center; */

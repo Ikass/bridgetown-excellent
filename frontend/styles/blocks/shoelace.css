@@ -40,9 +40,9 @@ grid-container sl-card::part(body) {
 
 sl-icon-button::part(base):hover,
 sl-icon-button::part(base):focus {
-  color: var(--color-primary);
+  /* color: var(--color-primary); */
 }
 
 sl-icon-button::part(base):active {
-  color: var(--color-primary);
+  /* color: var(--color-primary); */
 }

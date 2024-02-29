@@ -7,17 +7,22 @@ paginate:
   per_page: 4
 ---
 
-<section role="list" class="grid">
+<!-- <section role="list" class="grid"> -->
+<br-grid>
   <% paginator.resources.each do |post| %>
     <article>
-      <img
-        slot="image"
-        src="<%= post.data.image || 'https://placehold.co/778x438?text=Hello+Ruby' %>"
-        alt="A kitten sits patiently between a terracotta pot and decorative grasses."
-      />
-      <h2><%= post.data.title %></h2><br />
-      <%= post.data.description %><br />
-      <small><%= date_to_string post.data.date, "ordinal" %></small>
+      <header>
+        <img
+          slot="image"
+          src="<%= post.data.image || 'https://placehold.co/778x438?text=Hello+Ruby' %>"
+          alt="A kitten sits patiently between a terracotta pot and decorative grasses."
+        />
+      </header>
+      <article-body>
+        <h2><%= post.data.title %></h2>
+        <%= post.data.description %>
+        <small><%= date_to_string post.data.date, "ordinal" %></small>
+      </article-body>
       <footer>
         <a href="<%= post.relative_url %>" >
           <button>Read More</button>
@@ -25,7 +30,8 @@ paginate:
       </footer>
     </article>
   <% end %>
-</section>
+</br-grid>
+<!-- </section> -->
 
 
 <% if paginator.total_pages > 1 %>

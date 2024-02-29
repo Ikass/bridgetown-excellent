@@ -1,0 +1,18 @@
+/************************** 
+* Article as a Card
+* Maybe it would be better to use a custom HTML element like `br-card`?
+* As a light-weight Shoelace alternative.
+***************************/
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+article > article-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
